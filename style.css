@@ -21,7 +21,7 @@ body {
     align-items: center;
     padding-top: 4em;
     padding-bottom: 4em;
-    width: 80%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -36,6 +36,8 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
+    display: flex;
+    align-items: center;
 }
 
 .navbar .main-menu ul li a {
@@ -44,6 +46,24 @@ body {
     text-transform: uppercase;
 }
 
+.navbar .main-menu ul li a:hover {
+    text-decoration: underline 2px;
+    color: hsl(230, 29%, 20%);
+    text-transform: uppercase;
+}
+
+.hamburger-button {
+    display: none;
+    cursor: pointer;
+    border: none;
+}
+
+.rounded-div {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+}
 
 /* HERO SECTION */
 
@@ -53,7 +73,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     align-items: center;
-    width: 80%;
+    max-width: 80%;
     margin: auto;
     gap: 2em;
 }
@@ -102,9 +122,64 @@ body {
 .hero-text {
     width: 65%;
     margin-right: auto;
+    color: hsl(230, 11%, 40%);
 }
 
+.demo-button {
+    cursor: pointer;
+    padding: 0.5em 2em;
+    background-color: hsl(0, 100%, 68%);
+    border: none;
+    border-radius: 0.4em;
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.2s;
+}
 
+.demo-button:hover {
+    cursor: pointer;
+    padding: 0.5em 2em;
+    background-color: hsl(0, 100%, 77%);
+    border: none;
+    border-radius: 0.4em;
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.preview-button {
+    cursor: pointer;
+    padding: 0.5em 2em;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0.4em;
+    color: hsl(231, 7%, 65%);
+    font-family: 'Barlow Condensed';
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.2s;
+}
+
+.preview-button:hover {
+    cursor: pointer;
+    padding: 0.5em 2em;
+    background-color: #FFF;
+    border: none;
+    border-radius: 0.4em;
+    color: hsl(234, 4%, 49%);
+    font-family: 'Barlow Condensed';
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
 
 
 
@@ -116,3 +191,102 @@ body {
 
 
 /* Classes utilitaire */
+
+
+@media(max-width:960px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}
+
+
+@media(max-width: 430px) {
+
+    .navbar .container {
+        padding-bottom: 3em;
+        padding-top: 2em;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+        cursor: pointer;
+        border: none;
+
+    }
+
+    .hero-content h1 {
+        font-size: 2.1em;
+    }
+
+    .hero-button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .demo-button {
+        cursor: pointer;
+        padding: 0.7em 1em;
+        background-color: hsl(0, 100%, 68%);
+        border: none;
+        border-radius: 0.4em;
+        color: #FFF;
+        font-family: 'Barlow Condensed';
+        font-weight: bold;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: 0.2s;
+    }
+
+    .demo-button:hover {
+        cursor: pointer;
+        padding: 0.7em 1em;
+        background-color: hsl(0, 100%, 68%);
+        border: none;
+        border-radius: 0.4em;
+        color: #FFF;
+        font-family: 'Barlow Condensed';
+        font-weight: bold;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: 0.2s;
+    }
+
+
+    .preview-button {
+        cursor: pointer;
+        padding: 0.5em 1em;
+        background-color: #FFF;
+        border: none;
+        border-radius: 0.4em;
+        color: hsl(231, 7%, 65%);
+        font-family: 'Barlow Condensed';
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: 0.2s;
+    }
+
+    .preview-button:hover {
+        cursor: pointer;
+        padding: 0.5em 1em;
+        background-color: #FFF;
+        border: none;
+        border-radius: 0.4em;
+        color: hsl(234, 4%, 49%);
+        font-family: 'Barlow Condensed';
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+
+}
