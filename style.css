@@ -6,11 +6,112 @@
 
 body {
     font-family: 'Barlow', sans-serif;
+    font-size: 18px;
 }
 
 /* font-family: 'Barlow', sans-serif; */
 /* Headings, Call-to-actions, Navigation font-family: 'Barlow Condensed', sans-serif; */
 
+
+/* NAVBAR */
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.navbar .main-menu ul li {
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar .main-menu ul li a {
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    text-transform: uppercase;
+}
+
+
+/* HERO SECTION */
+
+.container {}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 2em;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    color: hsl(230, 29%, 20%);
+
+}
+
+
+.new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 0.3em;
+    color: hsl(231, 7%, 65%);
+}
+
+.new p {
+    padding-left: 1em;
+}
+
+
+.new button {
+    padding: 0.2em 0.7em;
+    border-radius: 1.5em;
+    border: none;
+    background-color: hsl(230, 29%, 20%);
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.hero-text {
+    width: 65%;
+    margin-right: auto;
+}
+
+
+
+
+
+.img {
+    width: 100%;
+    margin: auto;
+}
 
 
 
