@@ -82,6 +82,11 @@ body {
 
 .mobile-menu.active {
     display: block;
+    position: absolute;
+    background-color: #FFF;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -227,7 +232,7 @@ body {
 
 
 
-@media(max-width: 430px) {
+@media(max-width: 600px) {
 
     .navbar .container {
         padding-bottom: 3em;
